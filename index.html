@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+
+Page    : Donatio
+Version : 1.0
+Author  : Donatio
+URI     : http://www.donatio.org
+
+ -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- SEO -->
+    <meta name="author" content="Donatio">
+    <meta name="description" content="Donatio is the platform for philanthropic engagement.">
+    <meta name="keywords" content="philanthropy, donations, nonprofit, giving, charity">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Page Title -->
+    <title>Donatio</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Google Font : Open Sans & Montserrat -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Plugins -->
+    <link href="css/plugins/animate.css" rel="stylesheet">
+    <link href="css/plugins/slick.css" rel="stylesheet">
+    <link href="css/plugins/magnific-popup.css" rel="stylesheet">
+    <link href="css/plugins/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/streamline-icons.css" rel="stylesheet">
+
+    <!-- Event Style -->
+    <link href="css/event.css" rel="stylesheet">
+
+    <!-- Color Theme -->
+    <!-- Options: green, purple, red, yellow, mint, blue, black  -->
+    <link href="css/themes/blue.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="js/ie/respond.min.js"></script>
+  <![endif]-->
+
+    <!-- Modernizr -->
+    <script src="js/modernizr.min.js"></script>
+    <!-- Subtle Loading bar -->
+    <script src="js/plugins/pace.js"></script>
+</head>
+
+<body class="animate-page" data-spy="scroll" data-target="#navbar" data-offset="100">
+    <!--Preloader div-->
+    <div class="preloader"></div>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top reveal-menu js-reveal-menu reveal-menu-hidden">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/donatio_rsz.png" alt="Donatio"> </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#top">Home</a></li>
+                    <li><a href="#howitworks">About</a></li>   
+                    <li><a href="#story">Our Story</a></li>
+                    <li><a href="#stats">Stats</a></li>
+                    <li><a href="#philanthropists">Philanthropists</a></li>
+                    <li><a href="#nonprofits" class="hidden-sm">Nonprofits</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!-- // End Fixed navbar -->
+
+
+    <!-- START HEADER -->
+    <header id="top" class="header" style="background: -webkit-linear-gradient(#55ba76 15%, #007ba3 80%, #005672 100%)">
+        <div class="container">
+
+            <div class="header_top-bg">
+                <div class="logo">
+                    <a href="#"><img src="images/wibssin_donatio_all_landing_donatioMainLogo.png" alt="Donatio" width="25%"></a>
+                </div>
+            </div>
+
+            <h3 class="headline-support wow fadeInDown"></h3>
+            <h1 class="headline wow fadeInDown" data-wow-delay="0.1s">EXPLORE. GIVE. CONNECT.</h1>
+
+            <div class="when_where wow fadeIn" data-wow-delay="0.4s">
+                <p class="event_when">Donatio is the best way to discover and connect with charities.</p>
+                <p class="event_where">COMING SOON.</p>
+            </div>
+
+            <div class="header_bottom-bg">
+                
+                <div class="col-sm-12 col-md-8 col-md-offset-2">
+                    <form action="php/subscribe.php" method="post" class="form subscribe-form inverted-form" id="subscribeform" novalidate="novalidate">
+
+                        <div class="form-group col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
+                            <label class="sr-only">Email address</label>
+                            <input type="email" class="form-control input-lg" placeholder="Enter your email" name="email" id="email" required="" aria-required="true">
+                            <div id="js-subscribe-result" class="text-center" data-success-msg="Almost finished. Please check your email and verify." data-error-msg="Oops. Something went wrong."></div>
+                        </div>
+                        <div class="form-group col-md-5 col-sm-4">
+                            <button type="submit" class="btn btn-lg btn-default btn-block" id="js-subscribe-btn">Get the latest updates!</button>
+                        </div>
+
+                        <p class="cta_urgency wow fadeIn" data-wow-delay="0.5s" style="clear: both; visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;"><small>Spam is best served over rice. We promise not to spam you.</small></p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <!-- end .container -->
+    </header>
+    <!-- END HEADER -->
+
+
+    <!-- START HOW IT WORKS -->
+    <section style="background:#262626;" id="howitworks">
+        <div class="container" style="padding:0px 0 50px;">   
+            <div class="row">
+                <div class="section-title wow fadeInDown">
+                    <h5 style="color: white;">Donatio is the premier platform for exploring your favorite causes, giving with ease with one-tap give, and connecting and engaging with charities.</h5>
+                </div>          
+                <div class="col-md-10 col-md-offset-1">
+                    <br/>
+                    <div class="row" style="color:white;">
+                        <div class="col-sm-4">
+                            <div class="benefit-item wow fadeInLeft">
+                                <div class="benefit-icon"><i class="fa fa-search" style="color:white;"> </i></div>
+                                <h6 class="benefit-title">EXPLORE</h6>
+                                <p>Explore your favorite causes.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="benefit-item wow fadeInUp">
+                                <div class="benefit-icon"><i class="fa fa-arrow-circle-right" style="color:white;"> </i></div>
+                                <h6 class="benefit-title">GIVE</h6>
+                                <p>Give to charities with ease.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="benefit-item wow fadeInRight">
+                                <div class="benefit-icon"> <i class="fa fa-heart    " style="color:white;"> </i></div>
+                                <h6 class="benefit-title">CONNECT</h6>
+                                <p>Unlock the latest content and engage with your charities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title wow fadeInUp" style="margin-top:0px; color:white;">
+                <h1>#givingalways</h1>
+            </div>
+        </div>
+    </section>
+    <!-- END HOW IT WORKS -->    
+
+
+    <!-- START OUR STORY  -->
+    <section class="story" id="story">
+        <div class="container" style="margin-bottom:70px;">
+            <div class="section-title wow fadeInUp">
+                <i class="fa fa-heartbeat" style="font-size:50px; padding-bottom:30px;"></i>
+                <h4>PHILANTHROPY x TECHNOLOGY</h4>
+            </div>
+            <div class="container">
+                <h5 style="text-align:center; font-weight:100;">We are firm believers of philanthropy and technology. On our journey looking for a far better way to give to the causes we love, and to connect beyond letters and emails that we couldn't connect well through, we built <font color="#55ba76">Donatio</font>. We created a community and platform where it's easy to explore all the causes that you love (and even discover new ones), even easier to give with one-touch giving, and fun and engaging to unlock digital content, earn badges, and easily track our donations as well as the work of our charities. Philanthropists and nonprofits both deserve better so we built something that we love using, and we hope you do too!</h5>
+            </div> 
+        </div>
+        <!-- end .container -->
+    </section>
+    <!-- END OUR STORY -->
+
+
+    <!-- START NUMBERS -->
+    <section class="numbers" id="stats" style="background:#262626; color:white;">
+        <div class="container" style="padding-bottom: 70px;">
+            <div class="section-title wow fadeInUp">
+                <h4>SOME QUICK NUMBERS</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="benefit-item wow fadeInLeft">
+                                <div class="benefit-icon"><i class="fa fa-dollar"> </i></div>
+                                <h6 class="benefit-title">$358.38 BILLION</h6>
+                                <p>Americans gave a whopping $358.38 billion to charities in 2014.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="benefit-item wow fadeInRight">
+                                <div class="benefit-icon"><i class="fa fa-bar-chart"> </i></div>
+                                <h6 class="benefit-title">ONLINE GIVING</h6>
+                                <p>In 2013, 100 of the largest charities reported receiving 13% more in online donations, and 25 of these charities collected more than $10 million each in 2013 from online gifts.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="benefit-item wow fadeInLeft">
+                                <div class="benefit-icon"> <i class="fa fa-pie-chart"> </i></div>
+                                <h6 class="benefit-title">TOTAL CHARITIES</h6>
+                                <p>As of May 2015, there were approximately 1,521,052 charitable organizations in the United States.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="benefit-item wow fadeInRight">
+                                <div class="benefit-icon"> <i class="fa fa-mobile"> </i></div>
+                                <h6 class="benefit-title">SMARTPHONES</h6>
+                                <p>Nearly two-thirds of Americans own smartphones and spend <b>twice</b> as much time on mobile than desktop.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- end .container -->
+    </section>
+    <!-- END NUMBERS -->
+
+
+    <!-- START PHILANTHROPISTS  -->
+    <section class="philanthropists" id="philanthropists" >
+        <div class="container" style="padding-bottom: 70px;">
+            <div class="section-title wow fadeInUp">
+                <h4>PHILANTHROPISTS</h4>
+            </div>
+            <div class="container">
+                <h5 style="text-align:center; font-weight:100;">If you are aching to explore, give, and connect on a whole new level, sign up and you'll be the first to know!</h5>
+            </div> 
+        </div>
+        <!-- end .container -->
+    </section>
+    <!-- END PHILANTHROPISTS -->
+
+
+    <!-- START NONPROFITS  -->
+    <section class="nonprofits" id="nonprofits" style="background:#262626; color:white;">
+        <div class="container" style="padding-bottom: 70px;">
+            <div class="section-title wow fadeInUp">
+                <h4>NONPROFITS</h4>
+            </div>
+            <div class="container">
+                <h5 style="text-align:center; font-weight:100;">If you are an awesome early-adopter interested in being part of our platform, please contact our Director of Nonprofits at <a href="mailto:charities@donatio.org" target="_blank">charities@donatio.org</a>.</h5>
+            </div> 
+        </div>
+        <!-- end .container -->
+    </section>
+    <!-- END NONPROFITS -->
+
+
+    <!-- 
+     Our Sponsors
+     ====================================== -->
+
+    <section class="sponsors" id="sponsors">
+
+        <div class="container" style="padding-bottom:70px;">
+            <div class="section-title wow fadeInUp">
+                <h4>NONPROFITS WHO LOVE US</h4>
+                <p>Some of the nonprofits who love us.</p>
+            </div>
+
+            <div class="sponsor-slider wow bounceIn">
+                <div><img src="images/gap.png" class="img-responsive center-block" alt="sponsor"> </div>
+                <div><img src="images/gfla.png" class="img-responsive center-block" alt="sponsor"> </div>
+                <div><img src="images/chi.png" class="img-responsive center-block" alt="sponsor"> </div>
+                <div><img src="images/ghaw.png" class="img-responsive center-block" alt="sponsor"> </div>
+            </div>
+        </div>
+        <!-- end .container -->
+    </section>
+    <!-- end section.sponsors -->
+
+    <!-- 
+     Mailchimp Subscribe
+     ====================================== -->
+
+    <div class="highlight">
+        <div class="container">
+            <div class="row">
+                <form action="php/subscribe.php" method="post" class="form subscribe-form" id="subscribeform">
+                    <div class="form-group col-md-3 hidden-sm">
+                        <h6 class="susbcribe-head wow fadeInLeft"> GET UPDATES <small>BEFORE EVERYONE ELSE</small></h6>
+                    </div>
+                    <div class="form-group col-sm-8 col-md-6 wow fadeInRight">
+                        <label class="sr-only">Email address</label>
+                        <input type="email" class="form-control input-lg" placeholder="Enter your email" name="email" id="email" required>
+                        <div id="js-subscribe-result" class="text-center" data-success-msg="Almost finished. Please check your email and verify." data-error-msg="Oops. Something went wrong."></div>
+                    </div>
+                    <div class="form-group col-sm-4 col-md-3">
+                        <button type="submit" class="btn btn-lg btn-success btn-block" id="js-subscribe-btn">Be first in line →</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- //  end .highlight -->
+
+
+    <!-- START CONTACT -->
+    <div class="container" id="contact">
+        <div class="section-title">
+            <h5>WE WANT TO HEAR FROM YOU</h5>
+            <p>If you have any questions, please don't hesitate to contact us.</p>
+        </div>
+
+        <div class="contact-form bottom-space-xl wow fadeInUp">
+
+            <form action="php/contact.php" id="phpcontactform" method="POST">
+                <div class="row">
+
+                    <div class="col-md-6 col-md-offset-3">
+
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>First Name</label>
+                                    <input type="text" class="form-control" name="first_name" placeholder="First Name" required>
+
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <input type="text" class="form-control" name="last_name" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="text" class="form-control" name="phone" placeholder="Phone Number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Your Message</label>
+                            <textarea class="form-control" name="message" rows="6" placeholder="Enter your message here" required> </textarea>
+                        </div>
+
+                        <div class="text-center top-space">
+                            <button type="submit" class="btn btn-success btn-block btn-lg" id="js-contact-btn">SEND</button>
+                            <div id="js-contact-result" data-success-msg="Form submitted successfully." data-error-msg="Oops. Something went wrong."></div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <!-- // end .container -->
+
+    <!-- 
+     Footer Call to Action
+     ====================================== -->
+
+    <section class="footer-action">
+
+        <div class="container" style="padding-bottom:70px;">
+
+            <h4 class="headline-support wow fadeInDown">LET'S MAKE THE WORLD BETTER, TOGETHER.</h4>
+        </div>
+
+        </div>
+
+    </section>
+    <!-- end section.footer-action -->
+
+    <footer>
+
+        <div class="social-icons">
+            <a href="https://twitter.com/donatio_app" class="wow zoomIn"> <i class="fa fa-twitter"></i> </a>
+            <a href="#" class="wow zoomIn" data-wow-delay="0.2s"> <i class="fa fa-facebook"></i> </a>
+            <a href="#" class="wow zoomIn" data-wow-delay="0.4s"> <i class="fa fa-linkedin"></i> </a>
+        </div>
+        <p> <small class="text-muted">Copyright © 2016 by Donatio. All rights reserved. Made with ♥ in Los Angeles.</small></p>
+
+    </footer>
+
+    <a href="#top" class="back_to_top"><img src="images/back_to_top.png" alt="back to top"></a>
+
+    <!-- 
+     Registration Popup (PAYPAL)
+     ====================================== -->
+
+    <div class="modal fade" id="register-now" tabindex="-1" role="dialog" aria-labelledby="register-now-label">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center" id="register-now-label">Event Registration
+</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="registration-form">
+
+                        <!-- Testing Paypal? Change Paypal URL to https://www.sandbox.paypal.com/cgi-bin/webscr If you are testing -->
+
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="POST" target="_top" id="paypal-regn">
+
+                            <div class="row">
+
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>First Name</label>
+                                        <input type="text" class="form-control" name="first_name" placeholder="First Name" required>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Last Name</label>
+                                        <input type="text" class="form-control" name="last_name" placeholder="last name" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Email ID</label>
+                                <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-sm-7">
+
+                                    <div class="form-group">
+                                        <label>Choose a Pass</label>
+                                        <select class="form-control" name="os0" required>
+                                            <option value="">Choose...</option>
+                                            <option value="Silver Pass">Silver Pass $49.00 USD</option>
+                                            <option value="Gold Pass">Gold Pass $99.00 USD</option>
+                                            <option value="VIP Pass">VIP Pass $149.00 USD</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+
+                                    <div class="form-group">
+                                        <label>No. of Seats</label>
+                                        <select class="form-control" name="quantity" required>
+                                            <option value="">Choose...</option>
+                                            <option value="1">1 seat</option>
+                                            <option value="2">2 seats</option>
+                                            <option value="3">3 seats</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="agree" required> I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- 
+                            Paypal Hidden Fields
+                            ====================================== -->
+
+                            <!-- Customization Guide : http://bit.ly/papyal_dev_html_guide/ -->
+                            <!-- Paypal Form customization is not included in the Support Scope. Sorry. -->
+                            <!-- Change values inside value="" only -->
+
+                            <input type="hidden" name="cmd" value="_xclick">
+                            <!-- Your Paypal email to receive funds -->
+                            <input type="hidden" name="business" value="surjithctly@gmail.com">
+                            <input type="hidden" name="lc" value="US">
+                            <!-- Product Name -->
+                            <input type="hidden" name="item_name" value="Gather Event Pass">
+                            <!-- Label for Pass -->
+                            <input type="hidden" name="on0" value="Pass">
+                            <input type="hidden" name="button_subtype" value="services">
+                            <input type="hidden" name="no_note" value="1">
+                            <!-- Your Paypal currency -->
+                            <input type="hidden" name="currency_code" value="USD">
+                            <input type="hidden" name="bn" value="Event_BuyNow_WPS_IN">
+                            <!-- Pricing One Text (Should Match above form) -->
+                            <input type="hidden" name="option_select0" value="Silver Pass">
+                            <!-- Pricing One Amount (Should Match above form) -->
+                            <input type="hidden" name="option_amount0" value="49.00">
+                            <!-- Pricing One Text (Should Match above form) -->
+                            <input type="hidden" name="option_select1" value="Gold Pass">
+                            <!-- Pricing One Amount (Should Match above form) -->
+                            <input type="hidden" name="option_amount1" value="99.00">
+                            <!-- Pricing One Text (Should Match above form) -->
+                            <input type="hidden" name="option_select2" value="VIP Pass">
+                            <!-- Pricing One Amount (Should Match above form) -->
+                            <input type="hidden" name="option_amount2" value="149.00">
+                            <input type="hidden" name="option_index" value="0">
+                            <!-- Verify Paypal Payment - URL of PHP file. -->
+                            <!-- You have to give the Same URL also in Paypal => Profile => Selling Tools => IPN => Notfication URL -->
+                            <input type="hidden" name="notify_url" value="http://demo.web3canvas.com/themeforest/gather/php/verify-ipn.php">
+                            <!-- Payment Success Return page -->
+                            <input type="hidden" name="return" value="http://demo.web3canvas.com/themeforest/gather/success.html">
+                            <!-- Payment Cancel Return page -->
+                            <input type="hidden" name="cancel_return" value="http://demo.web3canvas.com/themeforest/gather/index.html">
+
+                            <!-- ./ End Paypal Hidden Fields -->
+
+                            <div class="text-center top-space">
+                                <button type="submit" id="reserve-btn" class="btn btn-success btn-lg">Reserve my Seat</button>
+
+                                <!-- Paypal Tracking Pixel. Do not remove -->
+                                <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+     Javascripts : Nerd Stuff :)
+     ====================================== -->
+
+    <!-- jQuery Library -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- 3rd party Plugins -->
+    <script src="js/plugins/countdown.js"></script>
+    <script src="js/plugins/wow.js"></script>
+    <script src="js/plugins/slick.js"></script>
+    <script src="js/plugins/magnific-popup.js"></script>
+    <script src="js/plugins/validate.js"></script>
+    <script src="js/plugins/appear.js"></script>
+    <script src="js/plugins/count-to.js"></script>
+    <script src="js/plugins/nicescroll.js"></script>
+
+    <!-- Google Map -->
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="js/plugins/infobox.js"></script>
+    <script src="js/plugins/google-map.js"></script>
+    <script src="js/plugins/directions.js"></script>
+
+    <!-- JS Includes -->
+    <script src="js/includes/subscribe.js"></script>
+    <script src="js/includes/contact_form.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
